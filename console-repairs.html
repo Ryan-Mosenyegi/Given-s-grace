@@ -5,10 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Console repairs | Given Grace Electronic Fix</title>
 <meta name="description" content="Don’t let a faulty console end the game. We diagnose and repair console problems with careful attention to what’s really going wrong.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap">
 <link rel="stylesheet" href="assets/styles.css">
+<noscript><style>.menu-wrap{display:flex!important;position:static!important;flex-direction:column}.nav-toggle{display:none!important}</style></noscript>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -18,18 +16,20 @@
       <span class="brand-mark"><i data-lucide="cpu" class="icon " style="width:22px;height:22px" aria-hidden="true"></i></span>
       <span class="wordmark"><span class="brand-name">Given Grace</span><span class="brand-sub">ELECTRONIC FIX</span></span>
     </a>
-    <nav aria-label="Main">
+    <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Open menu"><span class="bars" aria-hidden="true"></span></button>
+    <nav class="menu-wrap" id="site-menu" aria-label="Main">
       <ul class="links">
         <li><a class="link" href="index.html">Home</a></li>
         <li class="has-menu">
-          <a class="link" aria-current="page" href="index.html#services" aria-haspopup="true">Services <i data-lucide="chevron-down" class="icon chev" style="width:14px;height:14px" aria-hidden="true"></i></a>
+          <a class="link" aria-current="page" href="index.html#services" aria-haspopup="true">Services <span class="chev" aria-hidden="true"></span></a>
+          <button class="sub-toggle" type="button" aria-expanded="false" aria-label="Show services"><span class="chev-btn" aria-hidden="true"></span></button>
           <div class="menu"><div class="menu-panel"><a class="menu-item" href="console-repairs.html"><span class="menu-icon"><i data-lucide="gamepad-2" class="icon " style="width:22px;height:22px" aria-hidden="true"></i></span><span><strong>Console repairs</strong><span class="menu-desc">Power, display and performance faults.</span></span></a><a class="menu-item" href="tv-repairs.html"><span class="menu-icon"><i data-lucide="tv" class="icon " style="width:22px;height:22px" aria-hidden="true"></i></span><span><strong>TV repairs</strong><span class="menu-desc">Picture, sound and power problems.</span></span></a><a class="menu-item" href="software-updates.html"><span class="menu-icon"><i data-lucide="refresh-cw" class="icon " style="width:22px;height:22px" aria-hidden="true"></i></span><span><strong>Software updates</strong><span class="menu-desc">A fresh start for everyday performance.</span></span></a><a class="menu-item" href="general-repairs.html"><span class="menu-icon"><i data-lucide="wrench" class="icon " style="width:22px;height:22px" aria-hidden="true"></i></span><span><strong>General repairs</strong><span class="menu-desc">Troubleshooting for your electronics.</span></span></a><a class="menu-item" href="controller-repairs.html"><span class="menu-icon"><i data-lucide="joystick" class="icon " style="width:22px;height:22px" aria-hidden="true"></i></span><span><strong>Controller repairs</strong><span class="menu-desc">Stick drift, buttons and charging issues.</span></span></a><a class="menu-item" href="phone-repairs.html"><span class="menu-icon"><i data-lucide="smartphone" class="icon " style="width:22px;height:22px" aria-hidden="true"></i></span><span><strong>Phone repairs</strong><span class="menu-desc">Help with the device you rely on most.</span></span></a><a class="menu-item" href="overheating.html"><span class="menu-icon"><i data-lucide="thermometer" class="icon " style="width:22px;height:22px" aria-hidden="true"></i></span><span><strong>Overheating</strong><span class="menu-desc">Get to the source of excess heat.</span></span></a><a class="menu-item" href="device-cleaning.html"><span class="menu-icon"><i data-lucide="sparkles" class="icon " style="width:22px;height:22px" aria-hidden="true"></i></span><span><strong>Device cleaning</strong><span class="menu-desc">Careful cleaning, inside and out.</span></span></a></div></div>
         </li>
         <li><a class="link" href="about.html">About us</a></li>
         <li><a class="link" href="diagnostics.html">Diagnostics</a></li>
       </ul>
+      <a class="btn btn-gold nav-cta" href="index.html#contact">Get in touch <i data-lucide="arrow-up-right" class="icon " style="width:16px;height:16px" aria-hidden="true"></i></a>
     </nav>
-    <a class="btn btn-gold nav-cta" href="index.html#contact">Get in touch <i data-lucide="arrow-up-right" class="icon " style="width:16px;height:16px" aria-hidden="true"></i></a>
   </div>
 </header>
 <main id="main">
@@ -91,7 +91,7 @@
           <span class="wordmark"><span class="brand-name">Given Grace</span><span class="brand-sub">ELECTRONIC FIX</span></span>
         </a>
         <p class="footer-blurb">Good devices deserve a second chance. Thoughtful electronics repairs, with people at the heart of every fix.</p>
-        <p class="social"><a href="#">Instagram ↗</a><a href="#">Facebook ↗</a><a href="#">WhatsApp ↗</a></p>
+        <p class="social"><a href="https://www.instagram.com/givens_electronics_fix/" aria-label="Instagram"><i data-lucide="instagram" class="icon" aria-hidden="true"></i><span>Instagram</span></a><a href="https://www.facebook.com/profile.php?id=100063927437512" aria-label="Facebook"><i data-lucide="facebook" class="icon" aria-hidden="true"></i><span>Facebook</span></a><a href="https://wa.me/26772429682" aria-label="WhatsApp"><i data-lucide="message-circle" class="icon" aria-hidden="true"></i><span>WhatsApp</span></a></p>
       </div>
       <div>
         <h2 class="col-title">EXPLORE</h2>
@@ -99,7 +99,7 @@
       </div>
       <div>
         <h2 class="col-title">CONTACT THE WORKSHOP</h2>
-        <ul class="flist"><li class="ph">[Phone / WhatsApp number]</li><li class="ph">[Email address]</li><li class="ph">[Workshop address]</li></ul>
+        <ul class="flist"><li class="ph">+267  72 429 682</li><li class="ph">givenbogosi@gmail.com</li><li class="ph">Batlokwa Center, Tlokweng , Gaborone, Botswana</li></ul>
       </div>
       <div>
         <h2 class="col-title">NOT SURE WHAT’S WRONG?</h2>
