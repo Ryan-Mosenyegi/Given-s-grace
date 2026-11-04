@@ -1,6 +1,26 @@
 (function () {
   if (window.lucide) { window.lucide.createIcons(); }
 
+  /* ---------- subtle decorative parallax ---------- */
+  var artIcons = document.querySelectorAll(".ambient-art .art-icon");
+  var reduceArtMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (artIcons.length && !reduceArtMotion) {
+    var artFrame = null;
+    function moveAmbientArt() {
+      if (artFrame !== null) { return; }
+      artFrame = window.requestAnimationFrame(function () {
+        var scrollY = window.pageYOffset || document.documentElement.scrollTop || 0;
+        for (var i = 0; i < artIcons.length; i++) {
+          var speed = parseFloat(artIcons[i].getAttribute("data-speed")) || 0;
+          artIcons[i].style.transform = "translate3d(0," + (scrollY * speed) + "px,0)";
+        }
+        artFrame = null;
+      });
+    }
+    window.addEventListener("scroll", moveAmbientArt, { passive: true });
+    moveAmbientArt();
+  }
+
   /* ---------- mobile menu ---------- */
   var toggle = document.getElementById("nav-toggle");
   var menu = document.getElementById("site-menu");
