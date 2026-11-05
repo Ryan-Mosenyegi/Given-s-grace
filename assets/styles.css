@@ -17,10 +17,12 @@ html{scroll-behavior:smooth;scroll-padding-top:calc(var(--nav-h) + 16px);-webkit
 body{position:relative;isolation:isolate;margin:0;font:400 16px/1.6 var(--body);color:var(--ink);background:var(--white);overflow-x:hidden;-webkit-font-smoothing:antialiased}
 img,svg{max-width:100%}a{color:inherit}
 .ambient-art{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none;color:var(--gold-d)}
-.art-icon{position:absolute;display:block;width:clamp(112px,16vw,220px);height:clamp(112px,16vw,220px);opacity:.4}
+.art-icon{position:absolute;display:block;width:clamp(112px,16vw,220px);height:clamp(112px,16vw,220px);opacity:.5}
 .art-icon svg{display:block;width:100%;height:100%;stroke-width:1.15}
 .art-gamepad{left:4%;top:12%;color:var(--gold)}
 .art-phone{right:7%;top:24%;width:clamp(92px,12vw,164px);height:clamp(92px,12vw,164px);color:#999}
+.art-phone-wifi{right:1.5%;top:16%;width:clamp(38px,5vw,64px);height:clamp(38px,5vw,64px);color:var(--gold-d)}
+.art-phone-battery{right:19%;top:36%;width:clamp(38px,5vw,64px);height:clamp(38px,5vw,64px);color:#999}
 .art-laptop{left:9%;bottom:9%;width:clamp(140px,20vw,270px);height:clamp(140px,20vw,270px);color:#999}
 .art-monitor{left:42%;top:5%;width:clamp(110px,14vw,185px);height:clamp(110px,14vw,185px);color:#999}
 .art-board{left:31%;top:33%;width:clamp(100px,12vw,155px);height:clamp(100px,12vw,155px);color:var(--gold)}
@@ -200,7 +202,7 @@ input[type=radio],input[type=checkbox]{width:auto;min-height:0;accent-color:var(
   .cta .btn{width:100%}
 }
 @media (max-width:640px){
-  .art-icon{opacity:.4}
+  .art-icon{opacity:.5}
   .art-gamepad{left:-24px;top:16%}
   .art-phone{right:-16px;top:32%}
   .art-laptop{left:-28px;bottom:10%}
