@@ -23,6 +23,8 @@ img,svg{max-width:100%}a{color:inherit}
 .art-phone{right:7%;top:24%;width:clamp(92px,12vw,164px);height:clamp(92px,12vw,164px);color:#999}
 .art-phone-wifi{right:1.5%;top:16%;width:clamp(38px,5vw,64px);height:clamp(38px,5vw,64px);color:var(--gold-d)}
 .art-phone-battery{right:19%;top:36%;width:clamp(38px,5vw,64px);height:clamp(38px,5vw,64px);color:#999}
+.art-phone-camera{right:19%;top:22%;width:clamp(38px,5vw,58px);height:clamp(38px,5vw,58px);color:var(--gold-d)}
+.art-phone-signal{right:1.5%;top:43%;width:clamp(38px,5vw,58px);height:clamp(38px,5vw,58px);color:#999}
 .art-laptop{left:9%;bottom:9%;width:clamp(140px,20vw,270px);height:clamp(140px,20vw,270px);color:#999}
 .art-monitor{left:42%;top:5%;width:clamp(110px,14vw,185px);height:clamp(110px,14vw,185px);color:#999}
 .art-board{left:31%;top:33%;width:clamp(100px,12vw,155px);height:clamp(100px,12vw,155px);color:var(--gold)}
@@ -205,6 +207,8 @@ input[type=radio],input[type=checkbox]{width:auto;min-height:0;accent-color:var(
   .art-icon{opacity:.5}
   .art-gamepad{left:-24px;top:16%}
   .art-phone{right:-16px;top:32%}
+  .art-phone-camera{right:19%;top:25%}
+  .art-phone-signal{right:1.5%;top:46%}
   .art-laptop{left:-28px;bottom:10%}
   .art-monitor{left:48%;top:7%}
   .art-board{left:36%;top:58%}
