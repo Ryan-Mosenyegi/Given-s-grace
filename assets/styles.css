@@ -204,7 +204,7 @@ input[type=radio],input[type=checkbox]{width:auto;min-height:0;accent-color:var(
   .cta .btn{width:100%}
 }
 @media (max-width:640px){
-  .art-icon{opacity:.2}
+  .art-icon{opacity:.5}
   .art-gamepad{right:-52px;top:5%}
   .art-phone{right:4%;top:27%}
   .art-monitor{right:-26px;top:49%}
