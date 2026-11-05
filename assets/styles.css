@@ -17,17 +17,17 @@ html{scroll-behavior:smooth;scroll-padding-top:calc(var(--nav-h) + 16px);-webkit
 body{position:relative;isolation:isolate;margin:0;font:400 16px/1.6 var(--body);color:var(--ink);background:var(--white);overflow-x:hidden;-webkit-font-smoothing:antialiased}
 img,svg{max-width:100%}a{color:inherit}
 .ambient-art{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none;color:var(--gold-d)}
-.art-icon{position:absolute;display:block;width:clamp(112px,16vw,220px);height:clamp(112px,16vw,220px);opacity:.5}
+.art-icon{position:absolute;display:block;width:clamp(112px,13vw,180px);height:clamp(112px,13vw,180px);opacity:.5}
 .art-icon svg{display:block;width:100%;height:100%;stroke-width:1.15}
-.art-gamepad{left:4%;top:12%;color:var(--gold)}
-.art-phone{right:7%;top:24%;width:clamp(92px,12vw,164px);height:clamp(92px,12vw,164px);color:#999}
-.art-phone-wifi{right:1.5%;top:16%;width:clamp(38px,5vw,64px);height:clamp(38px,5vw,64px);color:var(--gold-d)}
-.art-phone-battery{right:19%;top:36%;width:clamp(38px,5vw,64px);height:clamp(38px,5vw,64px);color:#999}
-.art-phone-camera{right:19%;top:22%;width:clamp(38px,5vw,58px);height:clamp(38px,5vw,58px);color:var(--gold-d)}
-.art-phone-signal{right:1.5%;top:43%;width:clamp(38px,5vw,58px);height:clamp(38px,5vw,58px);color:#999}
-.art-laptop{left:9%;bottom:9%;width:clamp(140px,20vw,270px);height:clamp(140px,20vw,270px);color:#999}
-.art-monitor{left:42%;top:5%;width:clamp(110px,14vw,185px);height:clamp(110px,14vw,185px);color:#999}
-.art-board{left:31%;top:33%;width:clamp(100px,12vw,155px);height:clamp(100px,12vw,155px);color:var(--gold)}
+.art-gamepad{left:3%;top:12%;width:clamp(140px,15vw,200px);height:clamp(140px,15vw,200px);color:var(--gold)}
+.art-phone{right:8%;top:25%;width:clamp(110px,11vw,150px);height:clamp(110px,11vw,150px);color:#999}
+.art-phone-wifi{left:68%;top:17%;width:clamp(72px,8vw,108px);height:clamp(72px,8vw,108px);color:var(--gold-d)}
+.art-phone-battery{left:24%;top:41%;width:clamp(72px,8vw,108px);height:clamp(72px,8vw,108px);color:#999}
+.art-phone-camera{right:26%;top:67%;width:clamp(72px,8vw,108px);height:clamp(72px,8vw,108px);color:var(--gold-d)}
+.art-phone-signal{left:54%;top:55%;width:clamp(72px,8vw,108px);height:clamp(72px,8vw,108px);color:#999}
+.art-laptop{left:8%;bottom:9%;width:clamp(150px,18vw,230px);height:clamp(150px,18vw,230px);color:#999}
+.art-monitor{right:39%;top:7%;width:clamp(120px,13vw,170px);height:clamp(120px,13vw,170px);color:#999}
+.art-board{right:13%;bottom:13%;width:clamp(100px,11vw,145px);height:clamp(100px,11vw,145px);color:var(--gold)}
 .skip{position:absolute;left:-999px;top:8px;background:var(--ink);color:#fff;padding:8px 14px;border-radius:4px;z-index:100}.skip:focus{left:8px}
 :focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:2px}
 /* Clear pointer feedback for every link and button */
@@ -40,7 +40,7 @@ input[type=checkbox]:hover,input[type=radio]:hover{accent-color:var(--gold-d);bo
 p{margin:0}
 
 /* type */
-h1,h2{font-family:var(--display);font-weight:400;font-synthesis:none;letter-spacing:0;line-height:1.1;margin:0;overflow-wrap:break-word}
+h1,h2{font-family:var(--display);font-weight:400;font-synthesis:none;letter-spacing:0;line-height:1.1;margin:0;overflow-wrap:break-word;color:#111;-webkit-font-smoothing:auto;text-rendering:optimizeLegibility}
 h3{font-family:var(--body);font-weight:700;font-size:clamp(18px,2vw,21px);line-height:1.25;margin:0;letter-spacing:0}
 h1{font-size:clamp(2.25rem,1.2rem + 4.6vw,4.5rem)}
 h2{font-size:clamp(1.875rem,1.2rem + 2.4vw,2.75rem)}
@@ -205,13 +205,15 @@ input[type=radio],input[type=checkbox]{width:auto;min-height:0;accent-color:var(
 }
 @media (max-width:640px){
   .art-icon{opacity:.5}
-  .art-gamepad{left:-24px;top:16%}
-  .art-phone{right:-16px;top:32%}
-  .art-phone-camera{right:19%;top:25%}
-  .art-phone-signal{right:1.5%;top:46%}
+  .art-gamepad{left:-24px;top:14%}
+  .art-phone{right:0;top:29%}
+  .art-phone-wifi{left:64%;top:13%}
+  .art-phone-battery{left:14%;top:43%}
+  .art-phone-camera{right:5%;top:69%}
+  .art-phone-signal{left:58%;top:56%}
   .art-laptop{left:-28px;bottom:10%}
-  .art-monitor{left:48%;top:7%}
-  .art-board{left:36%;top:58%}
+  .art-monitor{right:36%;top:6%}
+  .art-board{right:5%;bottom:10%}
   .issues,.whys,.whys.three,.svc-grid,.footer-grid{grid-template-columns:1fr}
   .actions .btn{flex:1 1 100%}
   .form .btn{justify-self:stretch}
