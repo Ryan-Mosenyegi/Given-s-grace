@@ -19,15 +19,15 @@ img,svg{max-width:100%}a{color:inherit}
 .ambient-art{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none;color:var(--gold-d)}
 .art-icon{position:absolute;display:block;width:clamp(112px,13vw,180px);height:clamp(112px,13vw,180px);opacity:.5}
 .art-icon svg{display:block;width:100%;height:100%;stroke-width:1.15}
-.art-gamepad{right:-3%;top:8%;width:clamp(140px,15vw,200px);height:clamp(140px,15vw,200px);color:var(--gold);rotate:16deg}
-.art-phone{right:9%;top:27%;width:clamp(110px,11vw,150px);height:clamp(110px,11vw,150px);color:#999;rotate:-11deg}
-.art-phone-wifi{right:20%;top:14%;width:clamp(72px,8vw,108px);height:clamp(72px,8vw,108px);color:var(--gold-d);rotate:22deg}
-.art-phone-battery{right:-1%;top:45%;width:clamp(72px,8vw,108px);height:clamp(72px,8vw,108px);color:#999;rotate:-13deg}
-.art-phone-camera{right:21%;top:52%;width:clamp(72px,8vw,108px);height:clamp(72px,8vw,108px);color:var(--gold-d);rotate:12deg}
-.art-phone-signal{right:4%;top:68%;width:clamp(72px,8vw,108px);height:clamp(72px,8vw,108px);color:#999;rotate:-18deg}
-.art-laptop{right:11%;bottom:4%;width:clamp(150px,18vw,230px);height:clamp(150px,18vw,230px);color:#999;rotate:8deg}
-.art-monitor{right:24%;top:76%;width:clamp(120px,13vw,170px);height:clamp(120px,13vw,170px);color:#999;rotate:-9deg}
-.art-board{right:-2%;bottom:17%;width:clamp(100px,11vw,145px);height:clamp(100px,11vw,145px);color:var(--gold);rotate:19deg}
+.art-gamepad{right:-4%;top:4%;width:clamp(140px,15vw,200px);height:clamp(140px,15vw,200px);color:var(--gold);rotate:16deg}
+.art-phone{right:30%;top:24%;width:clamp(110px,11vw,150px);height:clamp(110px,11vw,150px);color:#999;rotate:-11deg}
+.art-phone-wifi{right:46%;top:11%;width:clamp(72px,8vw,108px);height:clamp(72px,8vw,108px);color:var(--gold-d);rotate:22deg}
+.art-phone-battery{right:8%;top:51%;width:clamp(72px,8vw,108px);height:clamp(72px,8vw,108px);color:#999;rotate:-13deg}
+.art-phone-camera{right:36%;top:43%;width:clamp(72px,8vw,108px);height:clamp(72px,8vw,108px);color:var(--gold-d);rotate:12deg}
+.art-phone-signal{right:17%;top:76%;width:clamp(72px,8vw,108px);height:clamp(72px,8vw,108px);color:#999;rotate:-18deg}
+.art-laptop{right:26%;bottom:5%;width:clamp(150px,18vw,230px);height:clamp(150px,18vw,230px);color:#999;rotate:8deg}
+.art-monitor{right:43%;top:72%;width:clamp(120px,13vw,170px);height:clamp(120px,13vw,170px);color:#999;rotate:-9deg}
+.art-board{right:-1%;bottom:18%;width:clamp(100px,11vw,145px);height:clamp(100px,11vw,145px);color:var(--gold);rotate:19deg}
 .skip{position:absolute;left:-999px;top:8px;background:var(--ink);color:#fff;padding:8px 14px;border-radius:4px;z-index:100}.skip:focus{left:8px}
 :focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:2px}
 /* Clear pointer feedback for every link and button */
