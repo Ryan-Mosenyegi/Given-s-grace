@@ -1,6 +1,20 @@
 (function () {
   if (window.lucide) { window.lucide.createIcons(); }
 
+  /* ---------- media loading skeletons ---------- */
+  var mediaFrames = document.querySelectorAll(".media-frame, .map");
+  for (var m = 0; m < mediaFrames.length; m++) {
+    (function (frame) {
+      var media = frame.querySelector("iframe,video,img");
+      if (!media) { frame.classList.add("is-loaded"); return; }
+      function markLoaded() { frame.classList.add("is-loaded"); }
+      media.addEventListener("load", markLoaded, { once: true });
+      media.addEventListener("loadeddata", markLoaded, { once: true });
+      if (media.tagName === "IMG" && media.complete && media.naturalWidth) { markLoaded(); }
+      if (media.tagName === "VIDEO" && media.readyState >= 2) { markLoaded(); }
+    })(mediaFrames[m]);
+  }
+
   /* ---------- subtle decorative parallax ---------- */
   var artIcons = document.querySelectorAll(".ambient-art .art-icon");
   var reduceArtMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
