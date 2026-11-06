@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650" role="img" aria-labelledby="title desc">
+  <title id="title">Electronics repair workbench</title>
+  <desc id="desc">A tidy repair bench with a game controller, smartphone, computer monitor and repair tools.</desc>
+  <rect width="900" height="650" rx="28" fill="#f1f1ec"/>
+  <circle cx="748" cy="132" r="82" fill="#e4d8ae" opacity=".55"/>
+  <circle cx="142" cy="520" r="112" fill="#deded8" opacity=".7"/>
+  <path d="M90 502h720v35H90z" fill="#242424"/>
+  <path d="M135 537h36v78h-36zm590 0h36v78h-36z" fill="#777a76"/>
+  <rect x="267" y="128" width="378" height="244" rx="18" fill="#242424"/>
+  <rect x="282" y="143" width="348" height="212" rx="9" fill="#fff"/>
+  <path d="M416 373h80l15 39H401z" fill="#777a76"/>
+  <path d="M365 414h182" stroke="#242424" stroke-width="13" stroke-linecap="round"/>
+  <path d="M316 201h126m-126 34h82m-82 34h105" stroke="#d9b65b" stroke-width="12" stroke-linecap="round"/>
+  <rect x="615" y="275" width="101" height="184" rx="20" fill="#777a76" transform="rotate(8 615 275)"/>
+  <rect x="625" y="288" width="81" height="155" rx="12" fill="#fff" transform="rotate(8 625 288)"/>
+  <circle cx="670" cy="453" r="5" fill="#d9b65b"/>
+  <path d="M211 423c-28-9-48 10-55 30l-13 34c-5 14 5 27 20 25l50-8 39 9c15 3 27-9 24-24l-8-38c-5-24-31-38-57-28z" fill="#d9b65b" stroke="#242424" stroke-width="9" stroke-linejoin="round"/>
+  <path d="M188 461v32m-16-16h32" stroke="#242424" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="237" cy="462" r="6" fill="#242424"/><circle cx="256" cy="477" r="6" fill="#242424"/>
+  <path d="m725 165 74 61m-92-45 24 22m-39 11 27 20" stroke="#777a76" stroke-width="10" stroke-linecap="round"/>
+  <path d="m778 215 20 11-15 18-18-15z" fill="#d9b65b"/>
+  <path d="M330 466h179" stroke="#777a76" stroke-width="8" stroke-linecap="round"/>
+  <path d="m458 442 22 24-22 24" fill="none" stroke="#d9b65b" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
