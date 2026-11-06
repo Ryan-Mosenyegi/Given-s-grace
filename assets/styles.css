@@ -19,11 +19,11 @@ img,svg{max-width:100%}a{color:inherit}
 .ambient-art{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none;color:var(--gold-d)}
 .art-icon{position:absolute;display:block;width:clamp(112px,13vw,180px);height:clamp(112px,13vw,180px);opacity:.5}
 .art-icon svg{display:block;width:100%;height:100%;stroke-width:1.15}
-.art-gamepad{right:-4%;top:4%;width:clamp(140px,14vw,185px);height:clamp(140px,14vw,185px);color:var(--gold);rotate:14deg}
-.art-phone{right:21%;top:27%;width:clamp(112px,11vw,150px);height:clamp(112px,11vw,150px);color:#999;rotate:-8deg}
-.art-laptop{right:22%;bottom:3%;width:clamp(150px,17vw,210px);height:clamp(150px,17vw,210px);color:#999;rotate:-12deg}
-.art-monitor{right:-1%;top:48%;width:clamp(120px,13vw,165px);height:clamp(120px,13vw,165px);color:#999;rotate:9deg}
-.art-board{right:5%;bottom:20%;width:clamp(100px,11vw,140px);height:clamp(100px,11vw,140px);color:var(--gold);rotate:17deg}
+.art-gamepad{left:5%;top:7%;right:auto;bottom:auto;width:clamp(140px,14vw,185px);height:clamp(140px,14vw,185px);color:var(--gold);rotate:14deg}
+.art-phone{left:auto;right:9%;top:12%;bottom:auto;width:clamp(112px,11vw,150px);height:clamp(112px,11vw,150px);color:#999;rotate:-8deg}
+.art-monitor{left:3%;right:auto;top:50%;bottom:auto;width:clamp(120px,13vw,165px);height:clamp(120px,13vw,165px);color:#999;rotate:9deg}
+.art-laptop{left:40%;right:auto;top:auto;bottom:4%;width:clamp(150px,17vw,210px);height:clamp(150px,17vw,210px);color:#999;rotate:-12deg}
+.art-board{left:auto;right:6%;top:auto;bottom:22%;width:clamp(100px,11vw,140px);height:clamp(100px,11vw,140px);color:var(--gold);rotate:17deg}
 .art-phone-wifi,.art-phone-battery,.art-phone-camera,.art-phone-signal{display:none}
 .skip{position:absolute;left:-999px;top:8px;background:var(--ink);color:#fff;padding:8px 14px;border-radius:4px;z-index:100}.skip:focus{left:8px}
 :focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:2px}
@@ -205,11 +205,11 @@ input[type=radio],input[type=checkbox]{width:auto;min-height:0;accent-color:var(
 }
 @media (max-width:640px){
   .art-icon{opacity:.5}
-  .art-gamepad{right:-52px;top:5%}
-  .art-phone{right:4%;top:27%}
-  .art-monitor{right:-26px;top:49%}
-  .art-board{right:10%;bottom:20%}
-  .art-laptop{right:22%;bottom:4%}
+  .art-gamepad{left:-20px;top:4%}
+  .art-phone{right:-10px;top:20%}
+  .art-monitor{left:2%;top:52%}
+  .art-board{right:6%;bottom:14%}
+  .art-laptop{left:38%;bottom:2%}
 
   .issues,.whys,.whys.three,.svc-grid,.footer-grid{grid-template-columns:1fr}
   .actions .btn{flex:1 1 100%}
