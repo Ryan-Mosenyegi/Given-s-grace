@@ -199,6 +199,8 @@ input[type=radio],input[type=checkbox]{width:auto;min-height:0;accent-color:var(
   .menu-desc{display:none}
   .nav-cta{width:100%;margin-top:20px}
   .hero-grid,.split,.diag-grid,.two-cards{grid-template-columns:1fr}
+  .band#contact .split{grid-template-columns:minmax(0,1fr)}
+  .band#contact .map-section{grid-column:1;min-width:0;width:100%}
   .issues-head,.promo{flex-direction:column;align-items:flex-start}
   .cta-inner{flex-direction:column;align-items:flex-start}
   .cta .btn{width:100%}
