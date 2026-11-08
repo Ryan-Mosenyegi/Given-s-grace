@@ -9,7 +9,7 @@ Open `index.html` in a browser. There is no build step. Every page links to the 
 - `about.html`, `diagnostics.html`
 - `PRODUCT.md`: product context (who the site is for, what is confirmed, what is still undecided)
 - `assets/styles.css`: all styling; colours, fonts and spacing are the variables at the top of the file
-- `assets/site.js`: icons, the hamburger menu and the enquiry form check
+- `assets/site.js`: icons, the hamburger menu, media states, and the gated Web3Forms submission flow
 - `assets/fonts/`: put the Anokha font file here (see the README.txt in that folder)
 
 ## Fonts
@@ -28,10 +28,10 @@ Open `index.html` in a browser. There is no build step. Every page links to the 
 
 The site includes the workshop's contact details, map, service pages, and repair photos. The former Promotions section and unfinished About page copy have been removed. Footer links to Terms and Privacy are hidden until real policy pages are ready, so the site has no dead `#` policy links.
 
-The business operates in Botswana and the owner plans to maintain the site. Launch is enquiry-only; the diagnostics form is not connected and does not send or save submissions. Confirm the customer service area, legal registered name, opening hours, public business-owned domain, and repair terms before launch. The domain is not yet known.
+The business operates in Botswana and the owner plans to maintain the site. Launch is enquiry-only. The diagnostics form has a prepared Web3Forms flow but remains disabled until the owner supplies an access key, enables hCaptcha, sets seven-day retention, and approves a privacy notice. Confirm the customer service area, legal registered name, opening hours, public business-owned domain, and repair terms before launch. The domain is not yet known.
 
 ## Things to know
 
 - Icons come from Lucide (the same icon names the Figma file uses) and load from the internet. Offline, the icons will not show.
-- The diagnostics form clearly warns that it does not send or save entries. Visitors are directed to phone, WhatsApp, or email until a form provider is connected.
+- The diagnostics form is disabled and clearly warns that it does not send or save entries. Visitors are directed to phone, WhatsApp, or email until the provider account and privacy notice are ready.
 - Terms and Privacy pages still need to be prepared and linked before launch.

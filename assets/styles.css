@@ -150,6 +150,10 @@ input[type=radio],input[type=checkbox]{width:auto;min-height:0;accent-color:var(
 .form-status{padding:0;border-radius:var(--radius-control);font-weight:600}
 .form-status.info{color:#493a12;background:#fbf5e5;border:1px solid #d9c27e;padding:12px 14px}
 .form-status.err{color:#7e241b;background:#fff1ed;border:1px solid #e3b7ad;padding:12px 14px}
+.form-status.ok{color:#303a27;background:#f1f4eb;border:1px solid #c8d2ba;padding:12px 14px}
+.form-captcha{grid-column:1 / -1}
+.form button:disabled{opacity:.72;cursor:not-allowed;box-shadow:none;text-decoration:none}
+.form fieldset:disabled{opacity:.72}
 .side{display:grid;gap:20px;align-content:start}.side h2{font-size:clamp(1.5rem,1.1rem + 1vw,1.875rem);margin-top:16px}.side h2:first-child{margin-top:0}.side p{color:var(--muted);font-size:14px}
 .side .steps{gap:24px}.side .step{grid-template-columns:52px minmax(0,1fr)}
 

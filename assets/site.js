@@ -100,17 +100,81 @@
   var form = document.getElementById("enquiry");
   if (!form) { return; }
   var status = document.getElementById("status");
+  var accessKey = (form.getAttribute("data-web3forms-key") || "").trim();
+  var formReady = form.getAttribute("data-web3forms-ready") === "true" && accessKey.length > 0;
+  var submitButton = form.querySelector('button[type="submit"]');
+  var formNotice = document.querySelector(".form-notice");
+
+  if (formReady) {
+    form.action = "https://api.web3forms.com/submit";
+    form.method = "post";
+    form.querySelector('[name="access_key"]').value = accessKey;
+    form.querySelectorAll("fieldset").forEach(function (fieldset) { fieldset.disabled = false; });
+    submitButton.disabled = false;
+    submitButton.innerHTML = 'Send repair enquiry <i data-lucide="arrow-up-right" class="icon" style="width:16px;height:16px" aria-hidden="true"></i>';
+    if (window.lucide) { window.lucide.createIcons(); }
+
+    var captcha = document.getElementById("form-captcha");
+    captcha.hidden = false;
+    if (!document.querySelector('script[data-web3forms-captcha]')) {
+      var captchaScript = document.createElement("script");
+      captchaScript.src = "https://web3forms.com/client/script.js";
+      captchaScript.async = true;
+      captchaScript.defer = true;
+      captchaScript.setAttribute("data-web3forms-captcha", "true");
+      document.body.appendChild(captchaScript);
+    }
+
+    if (formNotice) {
+      formNotice.innerHTML = "<strong>Online enquiries are active.</strong> Your details will be processed by Web3Forms and emailed to the workshop. Please do not include passwords, payment details, or other sensitive information.";
+    }
+  }
+
   form.addEventListener("submit", function (ev) {
     ev.preventDefault();
     status.className = "form-status";
+    if (!formReady) {
+      status.textContent = "Online enquiries are not active yet. Nothing was sent or saved. Please use the phone, WhatsApp, or email links above.";
+      status.className = "form-status info";
+      return;
+    }
     if (!form.checkValidity()) {
       form.reportValidity();
       status.textContent = "Check the highlighted fields: name, email, type of repair and symptoms are required.";
       status.className = "form-status err";
       return;
     }
-    // This form is not connected to a server. Replace this block with a request to your form service or backend.
-    status.textContent = "Form checked. Nothing was sent, because this form is not connected to a service yet.";
+    var originalButton = submitButton.innerHTML;
+    var accessKeyField = form.querySelector('[name="access_key"]');
+    submitButton.disabled = true;
+    submitButton.textContent = "Sending enquiry…";
+    form.setAttribute("aria-busy", "true");
+    status.textContent = "Sending your enquiry securely…";
     status.className = "form-status info";
+
+    fetch(form.action, { method: "POST", body: new FormData(form), headers: { Accept: "application/json" } })
+      .then(function (response) {
+        return response.json().then(function (data) {
+          if (!response.ok || !data.success) { throw new Error(data.message || "The form service could not accept the enquiry."); }
+          return data;
+        });
+      })
+      .then(function () {
+        status.textContent = "Your enquiry was sent. The workshop will contact you using the details you provided.";
+        status.className = "form-status ok";
+        form.reset();
+        accessKeyField.value = accessKey;
+        if (window.hcaptcha && typeof window.hcaptcha.reset === "function") { window.hcaptcha.reset(); }
+      })
+      .catch(function () {
+        status.textContent = "We couldn't confirm delivery. Please contact the workshop by phone, WhatsApp, or email instead.";
+        status.className = "form-status err";
+      })
+      .finally(function () {
+        submitButton.disabled = false;
+        submitButton.innerHTML = originalButton;
+        form.removeAttribute("aria-busy");
+        if (window.lucide) { window.lucide.createIcons(); }
+      });
   });
 })();

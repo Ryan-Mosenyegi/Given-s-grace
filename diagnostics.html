@@ -54,21 +54,25 @@
 <section class="band">
   <div class="wrap diag-grid">
     <p class="form-notice" role="note"><strong>Online enquiries are not active yet.</strong> Details entered here are not sent or saved. For now, call <a href="tel:+26772429682">+267 72 429 682</a>, message us on <a href="https://wa.me/26772429682">WhatsApp</a>, or email <a href="mailto:givenbogosi@gmail.com">givenbogosi@gmail.com</a>.</p>
-    <form class="form" id="enquiry" novalidate>
-      <fieldset><legend><span class="step-n">01</span> Your details</legend>
+    <!-- Keep data-web3forms-ready false until the owner has configured seven-day retention, enabled hCaptcha, and approved the privacy notice. -->
+    <form class="form" id="enquiry" data-web3forms-key="" data-web3forms-ready="false" method="post" action="https://api.web3forms.com/submit" novalidate>
+      <input type="hidden" name="access_key" value="">
+      <input type="hidden" name="subject" value="New repair enquiry — Given's Grace Electronics Fix">
+      <fieldset disabled><legend><span class="step-n">01</span> Your details</legend>
         <label>Name<input name="name" autocomplete="name" required></label>
         <label>Email<input name="email" type="email" autocomplete="email" required></label>
         <label>Phone or WhatsApp number <span class="opt">(optional)</span><input name="phone" type="tel" autocomplete="tel"></label>
       </fieldset>
-      <fieldset><legend><span class="step-n">02</span> Your device</legend>
+      <fieldset disabled><legend><span class="step-n">02</span> Your device</legend>
         <label>Type of repair<select name="type" required><option value="">Choose one</option><option>Console repairs</option><option>TV repairs</option><option>Software updates</option><option>General repairs</option><option>Controller repairs</option><option>Phone repairs</option><option>Overheating</option><option>Device cleaning</option><option>Something else</option></select></label>
         <label>Make and model<input name="model" placeholder="For example, the name on the box or the back"></label>
       </fieldset>
-      <fieldset><legend><span class="step-n">03</span> What’s happening</legend>
+      <fieldset disabled><legend><span class="step-n">03</span> What’s happening</legend>
         <label>Describe the symptoms<textarea name="symptoms" rows="5" required></textarea></label>
         <label>When did it start, and what have you tried?<textarea name="history" rows="3"></textarea></label>
       </fieldset>
-      <button class="btn btn-gold" type="submit">Check your details <i data-lucide="arrow-up-right" class="icon " style="width:16px;height:16px" aria-hidden="true"></i></button>
+      <div class="form-captcha" id="form-captcha" hidden><div class="h-captcha" data-captcha="true"></div></div>
+      <button class="btn btn-gold" type="submit" disabled>Online enquiries are not active</button>
       <p class="form-status" id="status" role="status" aria-live="polite"></p>
     </form>
     <aside class="side">
