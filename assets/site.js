@@ -7,9 +7,19 @@
     (function (frame) {
       var media = frame.querySelector("iframe,video,img");
       if (!media) { frame.classList.add("is-loaded"); return; }
-      function markLoaded() { frame.classList.add("is-loaded"); }
+      frame.setAttribute("aria-busy", "true");
+      function markLoaded() {
+        frame.classList.add("is-loaded");
+        frame.classList.remove("is-error");
+        frame.removeAttribute("aria-busy");
+      }
+      function markError() {
+        frame.classList.add("is-error", "is-loaded");
+        frame.removeAttribute("aria-busy");
+      }
       media.addEventListener("load", markLoaded, { once: true });
       media.addEventListener("loadeddata", markLoaded, { once: true });
+      media.addEventListener("error", markError, { once: true });
       if (media.tagName === "IMG" && media.complete && media.naturalWidth) { markLoaded(); }
       if (media.tagName === "VIDEO" && media.readyState >= 2) { markLoaded(); }
     })(mediaFrames[m]);
@@ -101,6 +111,6 @@
     }
     // This form is not connected to a server. Replace this block with a request to your form service or backend.
     status.textContent = "Form checked. Nothing was sent, because this form is not connected to a service yet.";
-    status.className = "form-status ok";
+    status.className = "form-status info";
   });
 })();
