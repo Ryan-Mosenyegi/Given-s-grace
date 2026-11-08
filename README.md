@@ -6,7 +6,7 @@ Open `index.html` in a browser. There is no build step. Every page links to the 
 
 - `index.html`: Home
 - `console-repairs.html`, `tv-repairs.html`, `software-updates.html`, `general-repairs.html`, `controller-repairs.html`, `phone-repairs.html`, `overheating.html`, `device-cleaning.html`: the eight service pages, all on one layout
-- `about.html`, `diagnostics.html`
+- `about.html`, `diagnostics.html`, `contact.html` (general messages, separate from repair diagnostics)
 - `PRODUCT.md`: product context (who the site is for, what is confirmed, what is still undecided)
 - `assets/styles.css`: all styling; colours, fonts and spacing are the variables at the top of the file
 - `assets/site.js`: icons, the hamburger menu, media states, and the gated Web3Forms submission flow
@@ -28,10 +28,10 @@ Open `index.html` in a browser. There is no build step. Every page links to the 
 
 The site includes the workshop's contact details, map, service pages, and repair photos. The former Promotions section and unfinished About page copy have been removed. Footer links to Terms and Privacy are hidden until real policy pages are ready, so the site has no dead `#` policy links.
 
-The business operates in Botswana and the owner plans to maintain the site. Launch is enquiry-only. The diagnostics form has a prepared Web3Forms flow but remains disabled until the owner supplies an access key, enables hCaptcha, sets seven-day retention, and approves a privacy notice. Confirm the customer service area, legal registered name, opening hours, public business-owned domain, and repair terms before launch. The domain is not yet known.
+The business operates in Botswana and the owner plans to maintain the site. Launch is enquiry-only. The diagnostics and general contact forms have prepared Web3Forms flows but remain disabled until the owner supplies an access key, enables hCaptcha, sets seven-day retention, and approves a privacy notice. Confirm the customer service area, legal registered name, opening hours, public business-owned domain, and repair terms before launch. The domain is not yet known.
 
 ## Things to know
 
 - Icons come from Lucide (the same icon names the Figma file uses) and load from the internet. Offline, the icons will not show.
-- The diagnostics form is disabled and clearly warns that it does not send or save entries. Visitors are directed to phone, WhatsApp, or email until the provider account and privacy notice are ready.
+- The diagnostics and contact forms are disabled and clearly warn that they do not send or save entries. Visitors are directed to phone, WhatsApp, or email until the provider account and privacy notice are ready.
 - Terms and Privacy pages still need to be prepared and linked before launch.

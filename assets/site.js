@@ -97,13 +97,15 @@
   }
 
   /* ---------- enquiry form ---------- */
-  var form = document.getElementById("enquiry");
+  var form = document.querySelector("form[data-web3forms-form]");
   if (!form) { return; }
   var status = document.getElementById("status");
   var accessKey = (form.getAttribute("data-web3forms-key") || "").trim();
   var formReady = form.getAttribute("data-web3forms-ready") === "true" && accessKey.length > 0;
   var submitButton = form.querySelector('button[type="submit"]');
   var formNotice = document.querySelector(".form-notice");
+  var isContactForm = form.id === "contact-enquiry";
+  var messageLabel = isContactForm ? "message" : "repair enquiry";
 
   if (formReady) {
     form.action = "https://api.web3forms.com/submit";
@@ -111,7 +113,7 @@
     form.querySelector('[name="access_key"]').value = accessKey;
     form.querySelectorAll("fieldset").forEach(function (fieldset) { fieldset.disabled = false; });
     submitButton.disabled = false;
-    submitButton.innerHTML = 'Send repair enquiry <i data-lucide="arrow-up-right" class="icon" style="width:16px;height:16px" aria-hidden="true"></i>';
+    submitButton.innerHTML = 'Send ' + (isContactForm ? "message" : 'repair enquiry') + ' <i data-lucide="arrow-up-right" class="icon" style="width:16px;height:16px" aria-hidden="true"></i>';
     if (window.lucide) { window.lucide.createIcons(); }
 
     var captcha = document.getElementById("form-captcha");
@@ -126,7 +128,7 @@
     }
 
     if (formNotice) {
-      formNotice.innerHTML = "<strong>Online enquiries are active.</strong> Your details will be processed by Web3Forms and emailed to the workshop. Please do not include passwords, payment details, or other sensitive information.";
+      formNotice.innerHTML = "<strong>Online " + (isContactForm ? "contact" : "enquiries") + " are active.</strong> Your details will be processed by Web3Forms and emailed to the workshop. Please do not include passwords, payment details, or other sensitive information.";
     }
   }
 
@@ -140,16 +142,16 @@
     }
     if (!form.checkValidity()) {
       form.reportValidity();
-      status.textContent = "Check the highlighted fields: name, email, type of repair and symptoms are required.";
+      status.textContent = "Please complete the required fields, including your name, email, and " + messageLabel + ".";
       status.className = "form-status err";
       return;
     }
     var originalButton = submitButton.innerHTML;
     var accessKeyField = form.querySelector('[name="access_key"]');
     submitButton.disabled = true;
-    submitButton.textContent = "Sending enquiry…";
+    submitButton.textContent = "Sending " + (isContactForm ? "message" : "enquiry") + "…";
     form.setAttribute("aria-busy", "true");
-    status.textContent = "Sending your enquiry securely…";
+    status.textContent = "Sending your " + (isContactForm ? "message" : "enquiry") + " securely…";
     status.className = "form-status info";
 
     fetch(form.action, { method: "POST", body: new FormData(form), headers: { Accept: "application/json" } })
@@ -160,7 +162,7 @@
         });
       })
       .then(function () {
-        status.textContent = "Your enquiry was sent. The workshop will contact you using the details you provided.";
+        status.textContent = "Your " + (isContactForm ? "message" : "enquiry") + " was sent. The workshop will contact you using the details you provided.";
         status.className = "form-status ok";
         form.reset();
         accessKeyField.value = accessKey;
