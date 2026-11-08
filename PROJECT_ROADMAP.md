@@ -15,10 +15,10 @@ The goal is to keep the live site easy to run and limit who can change it. No we
 
 Before choosing providers, decide:
 
-- Which country the business operates in and where customers may be located.
-- Whether online bookings or payments are needed now. If not, keep enquiries as the only transaction. If payments are added later, use a hosted checkout so the site never handles card details.
-- Who will update the site after launch.
-- The business-owned domain, business email, legal business name, address, hours, and registration details that should appear publicly.
+- **Business country:** Botswana. The customer service area still needs confirming.
+- **Transactions:** Enquiries only for launch; no online bookings or payments.
+- **Site updates:** The owner will update the site after launch.
+- **Public business details:** A public directory lists “GIVEN's Electronics FIX” at Batlokwa Center, Tlokweng, Gaborone, and gives 72 429 682. The site currently uses “Given's Grace Electronics Fix,” `givenbogosi@gmail.com`, and the owner-provided social links. Confirm the legal registered name and preferred public trading name before publishing legal pages. Public search did not reliably confirm business hours, registration details, or a business-owned domain. Choose a domain and confirm the business email/domain ownership before hosting setup.
 
 These answers determine the hosting, privacy wording, form settings, and legal pages.
 
@@ -85,4 +85,4 @@ The managed host handles file delivery, traffic spikes, and usually certificate 
 
 ## Next action
 
-Collect the Phase 1 decisions: business country/customer markets, whether bookings or payments are planned, who maintains the site, and the domain/business email. Then select the form provider and connect the enquiry form.
+Confirm the remaining Phase 1 details: service area, registered business name, opening hours, registration details to disclose, and a business-owned domain. The launch transaction model is enquiries only, and the owner will maintain the site. Then select the form provider and connect the enquiry form.
