@@ -28,7 +28,7 @@ Open `index.html` in a browser. There is no build step. Every page links to the 
 
 The site includes the workshop's contact details, map, service pages, and repair photos. The former Promotions section and unfinished About page copy have been removed. Footer links to Terms and Privacy are hidden until real policy pages are ready, so the site has no dead `#` policy links.
 
-The business operates in Botswana, serves Gaborone, and launch is enquiry-only. The requester is a hired freelancer; business-owned provider credentials and final operational/legal approvals come from the client/business owner. The diagnostics and general contact forms have prepared Web3Forms flows but remain disabled until the client supplies an access key, enables hCaptcha, sets seven-day retention, and approves a privacy notice. Public contact details and the current service list are already on the site. Proposed repair terms need client review before publication.
+The business operates in Botswana, serves Gaborone, and launch is enquiry-only. The workshop is open Monday–Saturday, 9:00 am–5:00 pm, and closed Sunday. The requester is a hired freelancer; business-owned provider credentials and final operational/legal approvals come from the client/business owner. The diagnostics and general contact forms have prepared Web3Forms flows but remain disabled until the client supplies an access key, enables hCaptcha, sets seven-day retention, and approves a privacy notice. Public contact details and the current service list are already on the site. Proposed repair terms need client review before publication.
 
 ## Things to know
 
