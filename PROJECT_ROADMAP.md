@@ -17,17 +17,17 @@ Before choosing providers, decide:
 
 - **Business country:** Botswana. The customer service area still needs confirming.
 - **Transactions:** Enquiries only for launch; no online bookings or payments.
-- **Site updates:** The owner will update the site after launch.
-- **Public business details:** A public directory lists “GIVEN's Electronics FIX” at Batlokwa Center, Tlokweng, Gaborone, and gives 72 429 682. The site currently uses “Given's Grace Electronics Fix,” `givenbogosi@gmail.com`, and the owner-provided social links. Confirm the legal registered name and preferred public trading name before publishing legal pages. Public search did not reliably confirm business hours, registration details, or a business-owned domain. Choose a domain and confirm the business email/domain ownership before hosting setup.
+- **Delivery roles:** The requester is a hired freelancer. They are implementing the site; the business owner should retain control of business accounts, provider credentials, legal wording, and operational decisions. The requester previously said they will update the site after launch, so confirm the ongoing maintenance arrangement with the client when handing it over.
+- **Public business details already on the site:** “Given's Grace Electronics Fix,” `givenbogosi@gmail.com`, +267 72 429 682, Batlokwa Center, Tlokweng, Gaborone, Botswana, the map link, and the supplied social links. Treat these as the client's current published contact details; do not ask the freelancer to repeat them. A public directory uses a slightly different trading-name spelling. The legal registered name, opening hours, registration details to disclose, and business-owned domain are not present in the site files and require client/owner input only if needed for launch/legal content.
 
 These answers determine the hosting, privacy wording, form settings, and legal pages.
 
 ### 2. Finish the public content and remove temporary material
 
-- **Audit completed:** reviewed all 11 HTML pages for placeholder copy, dead `#` links, and missing local page/asset targets. Removed dead footer policy links, corrected stale project notes, and added a clear notice that the enquiry form does not send or save entries. No missing local page targets were found.
-- **Still needs owner confirmation:** current contact details and service area; which repairs/devices are accepted; any service, turnaround, or pricing claims; and terms for quotes, warranties, uncollected devices, and data loss.
+- **Audit completed:** reviewed all 12 HTML pages, including the new Contact page, for placeholder copy, dead `#` links, and missing local page/asset targets. Removed dead footer policy links, corrected stale project notes, and added clear notices that the enquiry and contact forms do not send or save entries. No missing local page targets were found.
+- **Still needs client/owner confirmation:** customer service area; which repairs/devices are accepted; any service, turnaround, or pricing claims; and terms for quotes, warranties, uncollected devices, and data loss. Existing contact details are already published in the site.
 - Footer links to terms and privacy have been removed while they point nowhere; add real policy pages and link them before launch.
-- Confirm contact details, service descriptions, any prices or diagnostic fees, and repair terms such as quotes, warranty, uncollected devices, and data-loss handling.
+- Keep the already-published contact details consistent; confirm service descriptions, any prices or diagnostic fees, and repair terms such as quotes, warranty, uncollected devices, and data-loss handling with the client.
 - Write a privacy notice and terms that match how the business actually operates. Have a local professional review legal wording for the business’s country and customer markets.
 - Confirm rights for the Anokha font and all photos/illustrations. Keep console brand names as plain text unless logo use is authorized.
 - Decide how to handle the existing Google Maps and YouTube embeds. Check their privacy/cookie impact for the places the site serves; provide clear links or click-to-load behavior where appropriate.
@@ -39,7 +39,7 @@ These answers determine the hosting, privacy wording, form settings, and legal p
 - **Retention clarification:** An older FAQ says submissions are not stored, but the current Privacy Policy and DPA say they can be retained for up to three years. The current pricing page says per-form retention can be set as short as seven days; use that minimum before activation. Dashboard history is 30 days on Free, which is separate from the underlying retention period.
 - Web3Forms says it operates from India and uses infrastructure in multiple regions; its privacy terms also name spam prevention subprocessors that may receive submitter IP/email. Customer details will additionally be sent to the destination inbox, where the owner controls retention. Review the DPA and Botswana cross-border requirements before going live.
 - Free tier domain restriction is not included; enable hCaptcha and a honeypot, and collect only the fields needed. The public access key is an email-delivery identifier, not a secret; spam controls are still needed.
-- No provider is connected yet. The owner must create and control the account/access key, verify the destination inbox, set seven-day retention, and enable hCaptcha. Keep the form's warning in place until the account and privacy wording are ready.
+- No provider is connected yet. The business owner/client must create and control the account/access key, verify the destination inbox, set seven-day retention, and enable hCaptcha. The freelancer can integrate the supplied key and settings after receiving them. Keep the form's warning in place until the account and privacy wording are ready.
 - **Code preparation completed:** Web3Forms AJAX submission, sending/success/error states, and hCaptcha loading are wired behind a disabled-by-default switch. The form controls stay disabled and no data is sent until the access key is present and `data-web3forms-ready` is explicitly enabled after the privacy notice is approved.
 - Configure the form to send submissions to the business email and show a clear success or failure message.
 - Enable spam protection and rate limits. Collect only necessary details, set a retention period, and review the provider’s data-processing terms.
@@ -92,4 +92,4 @@ The managed host handles file delivery, traffic spikes, and usually certificate 
 
 ## Next action
 
-The owner should confirm the customer service area, registered business name, opening hours, registration details to disclose, repair terms, and business-owned domain. For Phase 3, create the Web3Forms account using the business-controlled inbox, review and accept its current DPA, set seven-day retention, enable hCaptcha, and provide the access key. Only then connect and test the form.
+Next, the freelancer should request only the remaining client decisions needed for launch (service area, accepted repairs, repair terms, and any public legal details). The business owner/client must create the Web3Forms account using the business-controlled inbox, review and accept its current DPA, set seven-day retention, enable hCaptcha, and provide the access key. The freelancer can then connect and test the form. The public contact details already on the site do not need to be requested again.

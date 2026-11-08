@@ -28,7 +28,7 @@ Open `index.html` in a browser. There is no build step. Every page links to the 
 
 The site includes the workshop's contact details, map, service pages, and repair photos. The former Promotions section and unfinished About page copy have been removed. Footer links to Terms and Privacy are hidden until real policy pages are ready, so the site has no dead `#` policy links.
 
-The business operates in Botswana and the owner plans to maintain the site. Launch is enquiry-only. The diagnostics and general contact forms have prepared Web3Forms flows but remain disabled until the owner supplies an access key, enables hCaptcha, sets seven-day retention, and approves a privacy notice. Confirm the customer service area, legal registered name, opening hours, public business-owned domain, and repair terms before launch. The domain is not yet known.
+The business operates in Botswana and launch is enquiry-only. The requester is a hired freelancer; business-owned provider credentials, legal wording, and operational decisions must come from the client/business owner. The diagnostics and general contact forms have prepared Web3Forms flows but remain disabled until the client supplies an access key, enables hCaptcha, sets seven-day retention, and approves a privacy notice. Public contact details are already on the site. Confirm remaining service area, repair terms, and any legal/business details needed before launch.
 
 ## Things to know
 
