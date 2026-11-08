@@ -35,7 +35,10 @@ These answers determine the hosting, privacy wording, form settings, and legal p
 
 ### 3. Make enquiries arrive reliably
 
-- Choose a hosted form provider; avoid building a custom server for this static site.
+- **Provider research:** No provider selected yet. Web3Forms fits static sites and advertises 250 submissions per month free with hCaptcha, but its documentation conflicts: its FAQ says submissions are not stored, while its Privacy Policy and DPA say submission data can be retained for up to three years. It describes processing in India and through multiple subprocessors/regions. Resolve the retention and transfer terms before choosing it.
+- **Alternative reviewed:** Formspree supports plain HTML/AJAX forms and basic spam filtering. Its free plan is described as for testing/development with 50 submissions/month and a 30-day archive; the Personal plan currently lists 200/month and $15 monthly or $120 annually in USD. Formspree says its service is hosted on AWS in the US. Check its current terms and fit before selecting a paid plan.
+- Do not activate a provider until the owner has reviewed the provider's terms/data-processing agreement, understands where enquiry data is processed and retained, and approved the inbox/account. This sends Botswana customers' contact details and device descriptions to a third party.
+- No provider is connected yet. The owner must create and control the account/access key, verify the destination inbox, and enable spam protection. Keep the form's warning in place until delivery and privacy wording are ready.
 - Configure the form to send submissions to the business email and show a clear success or failure message.
 - Enable spam protection and rate limits. Collect only necessary details, set a retention period, and review the provider’s data-processing terms.
 - Once the form provider and privacy notice are ready, add a privacy link beside the consent control.
@@ -87,4 +90,4 @@ The managed host handles file delivery, traffic spikes, and usually certificate 
 
 ## Next action
 
-Confirm the remaining Phase 1 details: service area, registered business name, opening hours, registration details to disclose, and a business-owned domain. The launch transaction model is enquiries only, and the owner will maintain the site. Then select the form provider and connect the enquiry form.
+The owner should confirm the customer service area, registered business name, opening hours, registration details to disclose, repair terms, and business-owned domain. For Phase 3, choose a form provider after reviewing its retention and data-processing terms, then create the account using the business-controlled inbox. Only then connect and test the form.
