@@ -12,11 +12,11 @@ Anyone with a broken electronic device. The visitor knows something is wrong wit
 
 ## Product Purpose
 
-Given Grace – Electronic Fix is an electronics repair workshop. The website helps visitors find the right service, describe the problem, and get in touch. Success is a visitor who understands what is likely wrong, trusts the workshop, and sends a repair enquiry or brings the device in.
+Given's Grace Electronics Fix is an electronics repair workshop in Tlokweng, Botswana. The website helps visitors find the right service, describe the problem, and get in touch. Success is a visitor who understands what is likely wrong, trusts the workshop, and sends a repair enquiry or contacts the workshop directly.
 
 ## Positioning
 
-Confirmed by the owner as what visitors should come away knowing:
+Owner-originated positioning notes (do not turn these into specific promises without confirmed details):
 
 - The workshop explains the fault and the proposed work before any repair goes ahead.
 - Fast turnaround.
@@ -25,7 +25,13 @@ Confirmed by the owner as what visitors should come away knowing:
 
 ## Operating Context
 
-Customers bring their device to the workshop. The workshop address, phone / WhatsApp number and email are not yet supplied (placeholders in the site).
+- Country: Botswana. The customer service area still needs confirmation.
+- Public trading name used on the site: Given's Grace Electronics Fix. A public directory also lists “GIVEN's Electronics FIX”; confirm the legal registered name and preferred public name.
+- Address shown on the site: Batlokwa Center, Tlokweng, Gaborone, Botswana.
+- Contact shown on the site: +267 72 429 682 and givenbogosi@gmail.com.
+- Launch model: enquiries only; no online booking or payment.
+- Site maintainer: the owner.
+- Domain, opening hours, registration details, and repair terms remain unconfirmed.
 
 ## Capabilities and Constraints
 
@@ -35,11 +41,11 @@ Repair options depend on the device model and the fault found during assessment.
 
 The diagnostics form is not connected to any service or backend yet.
 
-Undecided, not to be invented: actual turnaround times, prices or pricing model, workshop address and contact details, promotion details, the vision statement, social media links, terms and conditions, privacy policy, and which devices and brands are actually accepted.
+Undecided, not to be invented: customer service area, specific turnaround times, prices or pricing model, opening hours, domain, legal registered name and registration details, repair terms (quotes, warranty, uncollected devices, data-loss handling), terms and conditions, privacy policy, and which devices and brands are actually accepted.
 
 ## Brand Commitments
 
-- Name: Given Grace, with the descriptor "Electronic Fix".
+- Website brand: Given's Grace Electronics Fix. Confirm the legal registered name and final trading-name style before publishing legal notices.
 - Phrases from the Figma design: "Good devices deserve a second chance." and "Thoughtful electronics repairs, with people at the heart of every fix."
 - Tone in the Figma copy: plain explanation of the fault and the options, "without the technical overwhelm".
 
@@ -47,7 +53,7 @@ Undecided, not to be invented: actual turnaround times, prices or pricing model,
 
 - The Figma file "given-grace": https://www.figma.com/design/46fTwVCX4Kyk8QEvIcwA2E/given-grace
 - The static site in this folder (11 HTML pages). The Console repairs copy came from the Figma design; the other seven service pages were drafted from it.
-- Absent, and not to be fabricated: photographs, testimonials, customer names, prices, turnaround times, awards, years in business.
+- The site contains workshop and device photos; confirm that the business has permission to publish each image. No customer testimonials, customer names, awards, or years in business have been supplied.
 
 ## Product Principles
 

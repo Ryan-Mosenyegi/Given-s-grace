@@ -137,6 +137,8 @@ h2{font-size:clamp(1.875rem,1.2rem + 2.4vw,2.75rem)}
 .diag-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:clamp(32px,6vw,72px);align-items:start}
 .diag-grid>*{min-width:0}
 .form{display:grid;gap:32px}
+.form-notice{grid-column:1 / -1;padding:16px 20px;background:#fbf5e5;border:1px solid #d9c27e;border-left:4px solid var(--gold-d);border-radius:var(--radius-card);color:#493a12}
+.form-notice a{font-weight:700;text-underline-offset:3px}
 fieldset{border:1px solid var(--line);border-radius:var(--radius-card);padding:clamp(20px,3vw,28px);margin:0;display:grid;gap:20px;min-width:0}
 legend{font:700 clamp(18px,2vw,21px) var(--body);padding:0 12px;display:flex;gap:12px;align-items:baseline}legend .step-n{font-size:18px}
 label{display:grid;gap:8px;font-size:14px;font-weight:700}.opt{color:var(--muted);font-weight:400}
@@ -162,7 +164,6 @@ input[type=radio],input[type=checkbox]{width:auto;min-height:0;accent-color:var(
 .flist{list-style:none;margin:0;padding:0;display:grid;gap:12px;font-size:14px}.flist a{text-decoration:none}.flist a:hover{color:var(--gold)}
 .footer .ph{color:#b5b9b2}.textlink{display:inline-block;margin-top:16px;font-size:14px;text-decoration:none;border-bottom:1px solid var(--gold)}
 .legal{display:flex;justify-content:space-between;gap:12px 20px;flex-wrap:wrap;margin-top:clamp(32px,5vw,56px);padding-top:24px;border-top:1px solid #343836;font-size:12px;color:#b5b9b2}
-.policy{display:flex;gap:24px}.policy a{text-decoration:none}.policy a:hover{color:var(--gold)}
 
 /* ---------- responsive ---------- */
 @media (max-width:1100px){

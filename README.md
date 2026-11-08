@@ -24,16 +24,14 @@ Open `index.html` in a browser. There is no build step. Every page links to the 
 - Under 900px: the navigation becomes a hamburger menu. Services opens as an accordion inside it. Escape, a tap outside, or choosing a link closes it.
 - Under 640px: everything is a single column.
 
-## What came straight from the Figma design, and what did not
+## Current content status
 
-Taken from the design: the page structure, the navigation with the Services hover dropdown, the Console repairs page text, the eight service names and descriptions, the footer text and the shared layout.
+The site includes the workshop's contact details, map, service pages, and repair photos. The former Promotions section and unfinished About page copy have been removed. Footer links to Terms and Privacy are hidden until real policy pages are ready, so the site has no dead `#` policy links.
 
-Written by me because I could not read the Figma file when I built this (the Figma tool limit was reached): the copy for the seven other service pages, and the Home, About us and Diagnostics pages. Their section structure follows what I read earlier; their wording is a draft using phrases from the rest of the site. Colours, spacing and the footer background are my reading of the design, not exact values. The navigation bar is light grey (#ececec) at your request.
-
-Marked placeholders you still need to fill: phone / WhatsApp number, email address, workshop address, promotion details, vision statement, and every "Photo placeholder" box.
+The business operates in Botswana and the owner plans to maintain the site. Launch is enquiry-only; the diagnostics form is not connected and does not send or save submissions. Confirm the customer service area, legal registered name, opening hours, public business-owned domain, and repair terms before launch. The domain is not yet known.
 
 ## Things to know
 
 - Icons come from Lucide (the same icon names the Figma file uses) and load from the internet. Offline, the icons will not show.
-- The diagnostics form checks its fields but does not send anything. Connect it to a form service or a backend in `assets/site.js`.
-- Terms, Privacy and the social links point to `#`.
+- The diagnostics form clearly warns that it does not send or save entries. Visitors are directed to phone, WhatsApp, or email until a form provider is connected.
+- Terms and Privacy pages still need to be prepared and linked before launch.

@@ -105,7 +105,7 @@
     status.className = "form-status";
     if (!form.checkValidity()) {
       form.reportValidity();
-      status.textContent = "Check the highlighted fields: name, email, type of repair, symptoms and the agreement are required.";
+      status.textContent = "Check the highlighted fields: name, email, type of repair and symptoms are required.";
       status.className = "form-status err";
       return;
     }

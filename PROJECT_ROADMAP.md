@@ -24,7 +24,9 @@ These answers determine the hosting, privacy wording, form settings, and legal p
 
 ### 2. Finish the public content and remove temporary material
 
-- Check every page for temporary text, dead `#` links, incorrect contact details, and unsupported service or turnaround claims.
+- **Audit completed:** reviewed all 11 HTML pages for placeholder copy, dead `#` links, and missing local page/asset targets. Removed dead footer policy links, corrected stale project notes, and added a clear notice that the enquiry form does not send or save entries. No missing local page targets were found.
+- **Still needs owner confirmation:** current contact details and service area; which repairs/devices are accepted; any service, turnaround, or pricing claims; and terms for quotes, warranties, uncollected devices, and data loss.
+- Footer links to terms and privacy have been removed while they point nowhere; add real policy pages and link them before launch.
 - Confirm contact details, service descriptions, any prices or diagnostic fees, and repair terms such as quotes, warranty, uncollected devices, and data-loss handling.
 - Write a privacy notice and terms that match how the business actually operates. Have a local professional review legal wording for the business’s country and customer markets.
 - Confirm rights for the Anokha font and all photos/illustrations. Keep console brand names as plain text unless logo use is authorized.
@@ -36,7 +38,7 @@ These answers determine the hosting, privacy wording, form settings, and legal p
 - Choose a hosted form provider; avoid building a custom server for this static site.
 - Configure the form to send submissions to the business email and show a clear success or failure message.
 - Enable spam protection and rate limits. Collect only necessary details, set a retention period, and review the provider’s data-processing terms.
-- Link the privacy notice beside the consent checkbox.
+- Once the form provider and privacy notice are ready, add a privacy link beside the consent control.
 - Test successful delivery, invalid submissions, spam handling, and the reply address before launch.
 
 ### 4. Secure ownership and change access
