@@ -17,7 +17,7 @@ Before choosing providers, decide:
 
 - **Business country and service area:** Botswana; the client confirmed Gaborone as the service area.
 - **Transactions:** Enquiries only for launch; no online bookings or payments.
-- **Delivery roles:** The requester is a hired freelancer. They are implementing the site; the business owner should retain control of business accounts, provider credentials, legal wording, and operational decisions. The requester previously said they will update the site after launch, so confirm the ongoing maintenance arrangement with the client when handing it over.
+- **Delivery roles and account handoff:** The requester is a hired freelancer setting up the site. The current GitHub repository is on the freelancer’s account as the working/setup repository. The domain, hosting, and other business accounts will be transferred or created under the client’s ownership at handoff. Keep client credentials and legal/operational approvals client-controlled.
 - **Public business details confirmed:** “Given's Grace Electronics Fix,” `givenbogosi@gmail.com`, +267 72 429 682, Batlokwa Center, Tlokweng, Gaborone, Botswana, the map link, supplied social links, and hours of Monday–Saturday 9:00 am–5:00 pm; Sunday closed. Treat these as client-provided/current public details. A public directory uses a slightly different trading-name spelling. The legal registered name, registration details to disclose, and business-owned domain are not present in the site files and require client/owner input only if needed for launch/legal content.
 
 These answers determine the hosting, privacy wording, form settings, and legal pages.
@@ -50,15 +50,17 @@ These answers determine the hosting, privacy wording, form settings, and legal p
 
 ### 4. Secure ownership and change access
 
-- Use business-owned accounts for the domain registrar, hosting, source repository, and business email.
-- Turn on two-factor authentication everywhere, use a password manager, and store recovery codes offline in two safe places.
-- Keep a named backup person who can recover essential accounts.
-- Keep the repository private if that fits the business’s needs, protect `main`, and require approval before production deployment. Give helpers the least access they need.
+- **During setup:** secure the freelancer’s GitHub account with two-factor authentication, protect `main`, and keep an offline copy of the repository.
+- **At handoff:** create or transfer the repository to a client-controlled GitHub account; put domain registration, hosting, and business email under client control; transfer required admin access and recovery material securely.
+- Turn on two-factor authentication for all owner-controlled accounts, use a password manager, and store recovery codes offline in two safe places.
+- Keep a named client-side backup person who can recover essential accounts.
+- Require approval before production deployment and give helpers the least access they need.
 
 ### 5. Choose hosting and set up deployment
 
-- Choose a managed static host/CDN that provides HTTPS, custom security headers, deployment previews, and simple rollback.
-- Connect the business domain, choose one canonical address (`www` or non-`www`), and redirect the other to it.
+- Choose a managed static host/CDN for a preview deployment; it should provide HTTPS, custom security headers, deployment previews, and simple rollback.
+- The freelancer can deploy a staging/preview from the current repository during setup. At handoff, connect the client-owned repository and hosting account, then connect the business domain.
+- Choose one canonical address (`www` or non-`www`) and redirect the other to it.
 - Deploy production from the protected `main` branch, with an approval step and a saved version for rollback.
 - Configure security headers at the host, including a Content Security Policy that permits only the site’s required assets and embeds. Add HSTS only after HTTPS and redirects have been verified.
 
@@ -94,4 +96,4 @@ The managed host handles file delivery, traffic spikes, and usually certificate 
 
 ## Next action
 
-The client has confirmed Gaborone as the service area, the listed services, and opening hours (Monday–Saturday 9:00 am–5:00 pm; Sunday closed). The freelancer has prepared proposed repair terms; the client should approve them and decide any missing operating rules (diagnostic fee, uncollected-device process, and data handling) before publication. The business owner/client must create the Web3Forms account using the business-controlled inbox, review and accept its current DPA, set seven-day retention, enable hCaptcha, and provide the access key. The freelancer can then connect and test both forms. The public contact details already on the site do not need to be requested again.
+The client has confirmed Gaborone as the service area, the listed services, and opening hours (Monday–Saturday 9:00 am–5:00 pm; Sunday closed). The freelancer has prepared proposed repair terms; the client should approve them and decide any missing operating rules (diagnostic fee, uncollected-device process, and data handling) before publication. The business owner/client must create the Web3Forms account using the business-controlled inbox, review and accept its current DPA, set seven-day retention, enable hCaptcha, and provide the access key. The freelancer can then connect and test both forms. The current freelancer-owned GitHub repository is suitable for setup and a staging preview; transfer it and production accounts to the client at handoff. The public contact details already on the site do not need to be requested again.
