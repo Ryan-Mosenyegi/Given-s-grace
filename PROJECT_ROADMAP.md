@@ -35,10 +35,11 @@ These answers determine the hosting, privacy wording, form settings, and legal p
 
 ### 3. Make enquiries arrive reliably
 
-- **Provider research:** No provider selected yet. Web3Forms fits static sites and advertises 250 submissions per month free with hCaptcha, but its documentation conflicts: its FAQ says submissions are not stored, while its Privacy Policy and DPA say submission data can be retained for up to three years. It describes processing in India and through multiple subprocessors/regions. Resolve the retention and transfer terms before choosing it.
-- **Alternative reviewed:** Formspree supports plain HTML/AJAX forms and basic spam filtering. Its free plan is described as for testing/development with 50 submissions/month and a 30-day archive; the Personal plan currently lists 200/month and $15 monthly or $120 annually in USD. Formspree says its service is hosted on AWS in the US. Check its current terms and fit before selecting a paid plan.
-- Do not activate a provider until the owner has reviewed the provider's terms/data-processing agreement, understands where enquiry data is processed and retained, and approved the inbox/account. This sends Botswana customers' contact details and device descriptions to a third party.
-- No provider is connected yet. The owner must create and control the account/access key, verify the destination inbox, and enable spam protection. Keep the form's warning in place until delivery and privacy wording are ready.
+- **Provider chosen by the owner:** Web3Forms Free, pending account setup and privacy review. It supports static HTML forms, advertises 250 submissions/month, and provides hCaptcha integration on the free tier.
+- **Retention clarification:** An older FAQ says submissions are not stored, but the current Privacy Policy and DPA say they can be retained for up to three years. The current pricing page says per-form retention can be set as short as seven days; use that minimum before activation. Dashboard history is 30 days on Free, which is separate from the underlying retention period.
+- Web3Forms says it operates from India and uses infrastructure in multiple regions; its privacy terms also name spam prevention subprocessors that may receive submitter IP/email. Customer details will additionally be sent to the destination inbox, where the owner controls retention. Review the DPA and Botswana cross-border requirements before going live.
+- Free tier domain restriction is not included; enable hCaptcha and a honeypot, and collect only the fields needed. The public access key is an email-delivery identifier, not a secret; spam controls are still needed.
+- No provider is connected yet. The owner must create and control the account/access key, verify the destination inbox, set seven-day retention, and enable hCaptcha. Keep the form's warning in place until the account and privacy wording are ready.
 - Configure the form to send submissions to the business email and show a clear success or failure message.
 - Enable spam protection and rate limits. Collect only necessary details, set a retention period, and review the provider’s data-processing terms.
 - Once the form provider and privacy notice are ready, add a privacy link beside the consent control.
@@ -90,4 +91,4 @@ The managed host handles file delivery, traffic spikes, and usually certificate 
 
 ## Next action
 
-The owner should confirm the customer service area, registered business name, opening hours, registration details to disclose, repair terms, and business-owned domain. For Phase 3, choose a form provider after reviewing its retention and data-processing terms, then create the account using the business-controlled inbox. Only then connect and test the form.
+The owner should confirm the customer service area, registered business name, opening hours, registration details to disclose, repair terms, and business-owned domain. For Phase 3, create the Web3Forms account using the business-controlled inbox, review and accept its current DPA, set seven-day retention, enable hCaptcha, and provide the access key. Only then connect and test the form.
