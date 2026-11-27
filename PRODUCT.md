@@ -4,7 +4,7 @@
 
 ## Platform
 
-web
+Web — static HTML, CSS, and JavaScript. The site is deployed as a Cloudflare Pages staging preview at https://givens-grace.pages.dev. The client's production custom domain has not yet been connected.
 
 ## Users
 
@@ -23,25 +23,32 @@ Owner-originated positioning notes (do not turn these into specific promises wit
 - Clear pricing up front.
 - Specialist in consoles and controllers.
 
+Treat turnaround and pricing as positioning notes, not specific service guarantees. Do not publish exact prices or turnaround times unless the business confirms them.
+
 ## Operating Context
 
-- Country: Botswana. The customer service area still needs confirmation.
-- Public trading name used on the site: Given's Grace Electronics Fix. A public directory also lists “GIVEN's Electronics FIX”; confirm the legal registered name and preferred public name.
+- Country: Botswana.
+- Confirmed service area: Gaborone.
+- Public trading name used on the site: Given's Grace Electronics Fix. A public directory also lists “GIVEN's Electronics FIX”; the legal registered name and preferred legal trading-name style still need owner confirmation before legal notices are published.
 - Address shown on the site: Batlokwa Center, Tlokweng, Gaborone, Botswana.
 - Contact shown on the site: +267 72 429 682 and givenbogosi@gmail.com.
+- Published opening hours: Monday–Saturday, 9:00 am–5:00 pm; Sunday closed. These hours were supplied by the requester from the business listing and added to the Contact page.
 - Launch model: enquiries only; no online booking or payment.
-- Site maintainer: the owner.
-- Domain, opening hours, registration details, and repair terms remain unconfirmed.
+- Current setup: the freelancer is preparing the site in a GitHub repository on the freelancer's account. The Cloudflare Pages staging preview is https://givens-grace.pages.dev. The client is expected to own the production domain and business accounts at handoff.
+- Production custom domain: not yet supplied or connected.
+- Legal registration details and final repair terms remain unconfirmed.
 
 ## Capabilities and Constraints
 
-Services listed in the Figma design: console repairs, TV repairs, software updates, general repairs, controller repairs, phone repairs, overheating, device cleaning. Each has its own page.
+The site contains 12 HTML pages: the homepage, About, Contact, Diagnostics, and eight service pages. The service pages are console repairs, TV repairs, software updates, general repairs, controller repairs, phone repairs, overheating, and device cleaning.
 
 Repair options depend on the device model and the fault found during assessment.
 
-The diagnostics form is not connected to any service or backend yet.
+The Contact and Diagnostics pages contain forms with a prepared Web3Forms submission flow in `assets/site.js`. Both forms are deliberately disabled by default: their access-key configuration is not complete, the form controls are disabled, and submissions are not currently sent or stored. The diagnostics form is not connected to a diagnostic service or backend; it is an enquiry form only. Do not describe it as an automated diagnostic tool.
 
-Undecided, not to be invented: customer service area, specific turnaround times, prices or pricing model, opening hours, domain, legal registered name and registration details, repair terms (quotes, warranty, uncollected devices, data-loss handling), terms and conditions, privacy policy, and which devices and brands are actually accepted.
+The forms must remain disabled until the business owner controls the Web3Forms account and destination inbox, configures the provider and spam protection, and approves the privacy notice and data-handling arrangements. The forms should then be tested end-to-end before launch.
+
+Undecided, not to be invented: exact prices and pricing model, specific turnaround promises, diagnostic fees, uncollected-device deadline or fee, disposal process, data-handling procedures, final repair terms, legal registered name and registration details, and which devices and brands are actually accepted.
 
 ## Brand Commitments
 
@@ -52,8 +59,10 @@ Undecided, not to be invented: customer service area, specific turnaround times,
 ## Evidence on Hand
 
 - The Figma file "given-grace": https://www.figma.com/design/46fTwVCX4Kyk8QEvIcwA2E/given-grace
-- The static site in this folder (11 HTML pages). The Console repairs copy came from the Figma design; the other seven service pages were drafted from it.
+- The static site in this repository contains 12 HTML pages: one homepage, About, Contact, Diagnostics, and eight service pages.
 - The site contains workshop and device photos; confirm that the business has permission to publish each image. No customer testimonials, customer names, awards, or years in business have been supplied.
+- The Contact page includes the business phone, email, address, opening hours, and map link. The service area is Gaborone, as confirmed by the requester.
+- The deployed staging preview is https://givens-grace.pages.dev. The requester reported that the preview opened on their phone and that the initial mobile navigation, service-page, scrolling, and WhatsApp checks worked. This is a user-reported check, not a formal cross-device or accessibility test.
 
 ## Product Principles
 
